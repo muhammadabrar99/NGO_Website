@@ -1,0 +1,132 @@
+/* Google font Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500;700&display=swap');
+
+*, *::before, *::after, a {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+:root {
+    /* Colors */
+    --primary-color: #1D2130;
+    --secondry-color: #525560;
+    --yellow-color: #F2C94C;
+    --yellow-light-color: #FCEDC6;
+    --green-tertiary-color: #FCEDC6;
+    --black-color: #000000;
+    --off-white-color: #EBF0F9;
+    --border-color: #E5E5E5;
+
+    /* Headings */
+    --home-heading: 4rem;
+    --heading-1: 3.375rem;
+    --heading-2: 3rem;
+    --heading-3: 1.75rem;
+    --heading-4: 1.25rem;
+    --heading-5: 0.85rem;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* Buttons */
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: var(--yellow-color);
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    padding: 16px 32px;
+}
+
+.secondry-button {
+    background: var(#FFF);
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    padding: 16px 32px;
+}
+
+.navbar-button {
+    background: var(--primary-color);
+    color: #FFF;
+    font-size: 1rem;
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    padding: 16px 32px;
+}
+
+/* Home Page Styling */
+
+body {
+    background-color: #FFFFFF;
+    color: var(--black-color);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 87px;
+    position: fixed;
+    background-color: var(#FFF);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+}
+
+.nav-logo a {
+    font-size: var(--heading-3);
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 30%; */
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links li a {
+    font-size: var(--heading-5);
+    color: var(--black-color);
+    font-weight: 500;
+    padding: 0 1.25rem;
+}
+
+/* Media Querries */
+@media Screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 1.25rem;
+        height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        font-size: var(--heading-4)
+    }
+
+}
