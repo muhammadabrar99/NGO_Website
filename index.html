@@ -15,24 +15,41 @@
 </head>
 
 <body>
+    <!-- create a navbar with logo (Largerthan) and navbar link
+        Home, About US, What we do, Media, Comtact us and a donate button on right side of navbar with responsive css styling for large screen,tablets and mobile phones -->
+
     <nav class="navbar">
-        <div class="nav-logo">
-            <a href="#">Largerthan</a>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="donate-btn">
-            <button value="submit" class="navbar-button">Donate</button>
+        <div class="navContainer">
+            <div class="logo">
+                <a href="#">
+                    <img src="./Assets/Images/logo.png" alt="Logo image">
+                </a>
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">WhatWeDo</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">ContactUs</a></li>
+                    <li><a href="#"  id="donateButton1">Donate</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="donateButton" id="donateButton2">Donate</button>
+            </div>
         </div>
 
+        <!-- create self hamburger -->
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </nav>
+
+    <!-- Custom JS link -->
+    <script src="./Assets/Scripts/homePage.js"></script>
 </body>
 
 </html>
