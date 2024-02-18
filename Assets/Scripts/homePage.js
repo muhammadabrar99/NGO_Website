@@ -35,3 +35,13 @@ window.addEventListener("scroll", function () {
   // Remove the 'active' class from the navbar
   navbar.classList.remove("active");
 });
+
+// Video Player Controls
+document.querySelector(".playerBtn").addEventListener("click", function () {
+  var myVideo = document.getElementById("myVideo");
+  if (myVideo.paused) {
+    myVideo.play();
+  } else {
+    myVideo.pause();
+  }
+});
