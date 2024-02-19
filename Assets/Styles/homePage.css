@@ -265,14 +265,14 @@ body {
 /* About US Section */
 .aboutUs {
     width: 100%;
-    padding: 5rem 12rem;
 }
 
 .aboutUs .aboutUsContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
+    justify-content: start;
+    align-items: start;
+    padding: 5rem 8rem;
+    gap: 1rem;
 }
 
 .aboutUs .aboutUsContainer .aboutUsContent {
@@ -281,6 +281,10 @@ body {
     align-items: start;
     flex: 2;
     gap: 2.3rem;
+}
+
+.aboutUs .aboutUsContainer .aboutUsContent p:first-child {
+    font-size: var(--heading-4);
 }
 
 .aboutUs .aboutUsContainer .aboutUsContent .aboutUsHeading {
@@ -315,7 +319,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex: 1.5;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -344,6 +348,17 @@ body {
 
 
 /* Media Querries */
+@media screen and (max-width: 1200px) {
+    .aboutUs .aboutUsContainer {
+        padding: 5rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent {
+        flex: 1;
+
+    }
+}
+
 @media screen and (max-width: 991px) {
     .navContainer {
         justify-content: space-between;
@@ -352,6 +367,15 @@ body {
 
     .navContainer .navLinks ul li a {
         font-size: 1.1rem;
+    }
+
+    .aboutUs .aboutUsContainer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent .aboutUsHeading {
+        font-size: var(--heading-2);
     }
 
 }
@@ -440,6 +464,7 @@ body {
     }
 
     .navContainer .navLinks.show {
+        background: white;
         position: absolute;
         top: 70px;
         left: 0;
@@ -503,5 +528,33 @@ body {
 
     .heroSecDetails p:nth-child(2) {
         display: none;
+    }
+
+    /* About Us */
+    .aboutUs .aboutUsContainer {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent {
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent .aboutUsHeading {
+        font-size: var(--heading-3);
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent .aboutUsPara {
+        font-size: 1rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsContent .aboutUsBtn {
+        font-size: .9rem;
+        padding: .5rem 1rem;
+    }
+
+    .aboutUs .aboutUsContainer .aboutUsVideo {
+        height: 400px;
     }
 }

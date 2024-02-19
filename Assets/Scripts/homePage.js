@@ -45,3 +45,21 @@ document.querySelector(".playerBtn").addEventListener("click", function () {
     myVideo.pause();
   }
 });
+
+
+let aboutUsVideoEl = document.getElementById("aboutUsVideo");
+let aboutUsContainerEl = document.getElementById("aboutUsVideoContainer");
+
+// Add an event listener to the container
+aboutUsContainerEl.addEventListener("click", function () {
+  // If the video is currently playing, pause it
+  if (!aboutUsVideoEl.paused) {
+    aboutUsVideoEl.pause();
+  }
+  // Otherwise, play the video
+  else {
+    aboutUsVideoEl.play();
+  }
+});
+
+
