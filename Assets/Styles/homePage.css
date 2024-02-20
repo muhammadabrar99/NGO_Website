@@ -344,8 +344,63 @@ body {
     z-index: -100;
 }
 
+/* Our Supportes Section */
+.ourSupporters {
+    width: 100%;
+    padding: 5rem 8rem;
+}
 
 
+.ourSupporters .ourSupportersContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ourSupporters .ourSupportersContainer .ourSupportersContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ourSupportersContent .line {
+    flex: 2;
+    border: 1px solid rgba(212, 204, 204, 0.788);
+}
+
+.ourSupportersContent .ourSupportersHeading {
+    font-size: var(--heading-4);
+    font-weight: 700;
+}
+
+.ourSupportersContainer .supportersLogos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.ourSupportersContainer .supportersLogos a {
+    color: var(--primary-color);
+    font-size: var(--heading-4);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.ourSupportersContainer .supportersLogos img {
+    width: 100px;
+    height: 80px;
+    /* border-radius: 50%; */
+    background: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
 /* Media Querries */
 @media screen and (max-width: 1200px) {
@@ -426,6 +481,21 @@ body {
     .heroSecDetails p {
         font-size: .9rem;
     }
+
+    /* our Supporters Section */
+    .ourSupporters {
+        padding: 2rem;
+    }
+
+    .ourSupporters .ourSupportersContainer .ourSupportersContent .line {
+        display: none;
+    }
+
+    .ourSupporters .ourSupportersContainer .ourSupportersContent .ourSupportersHeading {
+        font-size: var(--heading-3);
+    }
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -454,6 +524,25 @@ body {
 
     .heroSecDetails p {
         font-size: .8rem;
+    }
+
+    /* Our Supporters Section */
+
+    .ourSupporters .ourSupportersContainer .ourSupportersContent .ourSupportersHeading {
+        font-size: var(--heading-4);
+    }
+
+    .ourSupportersContainer .supportersLogos {
+        gap: 1rem;
+    }
+
+    .ourSupportersContainer .supportersLogos a {
+        font-size: var(--heading-5);
+    }
+
+    .ourSupportersContainer .supportersLogos img {
+        width: 80px;
+        height: 60px;
     }
 
 }
@@ -556,5 +645,10 @@ body {
 
     .aboutUs .aboutUsContainer .aboutUsVideo {
         height: 400px;
+    }
+
+    /* Our Supporters Section */
+    .ourSupportersContainer .supportersLogos {
+        justify-content: space-around;
     }
 }
